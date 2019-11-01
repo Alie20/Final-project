@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    final
+{% endblock %}
+
+{% block main %}
+<div class="thanks">
+<h1 >Thanks for buying </h1><br>
+<h3 class="thanks">The products will reach within 48 hours</h3><br>
+</div>
+  <table>
+  <tr>
+    <th>username</th>
+    <th>Arduino</th>
+    <th>Raspberry</th>
+    <th>Node MCU</th>
+    <th>stepper motor</th>
+  </tr>
+  <tr>
+    <td>{{f[0]['username'] }}</td>
+    <td>{{f[0]['Arduino'] }}</td>
+    <td>{{f[0]['node']  }}</td>
+    <td>{{f[0]['stepper']}}</td>
+    <td>{{f[0]['rasp'] }}</td>
+  </tr>
+  <tr>
+      <td>price per one</td>
+      <td>8$</td>
+      <td>10$</td>
+      <td>10$</td>
+      <td>35$</td>
+  </tr>
+  <tr>
+    <td>total price</td>
+    <td>{{f[0]['Arduino'] |int *8}}</td>
+    <td>{{f[0]['node'] |int *10 }}</td>
+    <td>{{f[0]['stepper'] |int *10}}</td>
+    <td>{{f[0]['rasp'] | int *35}}</td>
+  </tr>
+  <tr>
+    <tr>
+        <td colspan="4" border:solid 1px;> Time for buying </td>
+        <td>{{f[0]['time']}}</td>
+    </tr>
+      <tr>
+  <td colspan="4" border:solid 1px;>CASH</td>
+  <td>{{f[0]['Arduino'] |int *8 + f[0]['node'] |int *10 + f[0]['stepper'] |int *10 + f[0]['rasp'] | int *35}}</td>
+  </tr>
+
+
+
+
+{% endblock %}

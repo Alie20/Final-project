@@ -1,0 +1,109 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+.hero
+{
+    height:100vh;
+    background-color:#ffffff;
+    background-position:center;
+    background-size:cover;
+    font-family: sans-serif;
+}
+.nav-bar
+{
+    display:flex;
+    height:12%;
+    background-color:#2b324b;
+    border-bottom:1px solid rgba(255,255,255,0.5)
+
+}
+.navbar-left
+{
+    flex-basis:70%;
+}
+.navbar-inner
+{
+    display:flex;
+    align-items:center;
+    padding:30px 40px 10px 50px;
+}
+.navbar-inner ul
+{
+    margin-left :5px;
+    z-index:2;
+}
+.navbar-inner ul li
+{
+    margin:0 10px;
+    display:inline-block;
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+
+}
+.navbar-right
+{
+    flex-basis:30%;
+
+}
+.navbar-right ul
+{
+    float:right;
+    padding:35px 40px 10px 50px;
+}
+.navbar-right ul li
+{
+    display:inline-block;
+    list-style:none;
+    margin-left:40px;
+}
+.navbar-right ul li a
+{
+    color:#fff;
+    text-decoration: none;
+}
+.content
+{
+    display:flex;
+    height:40%;
+}
+.content-left
+{
+    flex-basis:50%;
+    position:relative;
+    margin-top:80px;
+    
+}
+.content-right img
+{
+    background-position: center;
+    
+    height:150%;
+    width:100%;
+    margin-right: 50px;
+    margin-top:80px
+}
+.content-right
+{
+    flex-basis:50%;
+    position:relative;    
+}
+.content-left h1
+{
+    font-size:60px;
+    margin-top:40px;
+    margin-left:70px;
+    
+}
+.content-left h4
+{
+    font: size 40px;
+    margin-left:85px;
+    color:rgb(8, 41, 37);
+}
+span a
+{
+    color:red;
+}

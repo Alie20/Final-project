@@ -1,0 +1,131 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    product
+{% endblock %}
+
+
+
+{%  block main %}
+<div class="container">
+    <h2>Products</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="product-top">
+            <img class="photo" src="static/stepper.jpg" >
+            <div class="overlay">
+                <button type="submit" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i></button>
+                <button type="submit" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <button type="submit" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <div class ="product-bottom" text-center>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <h3>Stepper Motor</h3>
+                    <h5>$10</h5>
+
+        <form action="/home" method="post">
+        <div class="form-group">
+        <input autocomplete="off" class="form-control" min="0" name="stepper" value=0 type="number">
+        </div>
+        <button class="btn btn-secondary" type"submit" >BUY</button>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-top">
+            <img class="photo"  src="static/node.jpg" >
+            <div class="overlay">
+                <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <div class ="product-bottom" text-center>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <h3>Node mcu</h3>
+                    <h5>$10</h5>
+
+
+        <div class="form-group">
+        <input autocomplete="off" class="form-control" min="0" name="node" value=0 type="number">
+        </div>
+                <button class="btn btn-secondary" type"submit" >BUY</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-top">
+            <img class="photo"  src="static/rasp.jpg" >
+            <div class="overlay">
+                <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <div class ="product-bottom" text-center>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <h3>Raspberry Pi 3</h3>
+                    <h5>$35</h5>
+
+
+        <div class="form-group">
+        <input autocomplete="off" class="form-control" min="0" name="rasp" value=0 type="number">
+        </div>
+        <button class="btn btn-secondary" type"submit" >BUY</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-top">
+            <img class="photo"  src="static/ard d.jpg" >
+            <div class="overlay">
+                <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <div class ="product-bottom" text-center>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <h3>Arduino due</h3>
+                    <h5>$8</h5>
+
+        <div class="form-group">
+        <input autocomplete="off" class="form-control" min="0" name="ard" value=0 type="number">
+        </div>
+        <button class="btn btn-secondary" type"submit" >BUY</button>
+        </form>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+

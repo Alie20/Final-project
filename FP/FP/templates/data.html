@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    data
+{% endblock %}
+
+{% block main %}
+
+    <table>
+  <tr>
+    <th>username</th>
+    <th>Arduino</th>
+    <th>Raspberry</th>
+    <th>Node MCU</th>
+    <th>stepper motor</th>
+  </tr>
+  <tr>
+    <td>{{x[0]['username'] }}</td>
+    <td>{{x[0]['Arduino'] }}</td>
+    <td>{{x[0]['node']  }}</td>
+    <td>{{x[0]['stepper']}}</td>
+    <td>{{x[0]['rasp'] }}</td>
+  </tr>
+  <tr>
+      <td>price per one</td>
+      <td>8$</td>
+      <td>10$</td>
+      <td>10$</td>
+      <td>35$</td>
+  </tr>
+  <tr>
+    <td>total price</td>
+    <td>{{x[0]['Arduino'] |int *8}}</td>
+    <td>{{x[0]['node'] |int *10 }}</td>
+    <td>{{x[0]['stepper'] |int *10}}</td>
+    <td>{{x[0]['rasp'] | int *35}}</td>
+  </tr>
+  <tr>
+      <tr>
+  <td colspan="4" border:solid 1px;>CASH</td>
+  <td>{{x[0]['Arduino'] |int *8 + x[0]['node'] |int *10 + x[0]['stepper'] |int *10 + x[0]['rasp'] | int *35}}</td>
+  </tr>
+
+
+</table>
+
+<br>
+<p>Do you confirm to buy this components</p>
+
+<form action="/data" method="post">
+<button class="btn" type"submit" name="ok" value="ok" >BUY</button>
+<button class="btn" type"submit" name="cancel" value="cancel">cancel</button>
+</form>
+
+
+
+{% endblock %}
